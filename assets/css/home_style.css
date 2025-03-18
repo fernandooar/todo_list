@@ -1,0 +1,268 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 2px 1px 18px #1a5bbf90;
+    border-radius: 10px;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    background: radial-gradient(circle, #1a5bbf90, #2575fc);
+    padding: 15px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    row-gap: 15px;
+}
+
+header h2, h5 {
+    margin: 0;
+    color: #ffffff;
+}
+
+.header-title, .header-login {
+    width: 100%;
+}
+
+.header-button {
+    width: 100%;
+    text-align: right;
+}
+
+.btn-logout {
+    background-color: #2575fc;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.current-time {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    color: #fff;
+}
+
+.current-time p{
+    font-size: 1rem;
+    color: #fff;
+    
+}
+
+.btn-logout:hover {
+    background-color: #6a11cb;
+}
+
+/* Formulário de Tarefas */
+.form-tarefa {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 2px solid #2575fc;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.form-tarefa input,
+.form-tarefa textarea {
+    width: 97%;
+    max-width: 96%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #4d0d9b99;
+    border-radius: 5px;
+    box-shadow: 2px 1px 18px #1a5bbf90;
+}
+
+.form-tarefa input:focus,
+.form-tarefa textarea:focus {
+    border-color: #6a11cb;
+    outline: none;
+}
+
+.form-tarefa button {
+    background-color: #6a11cb;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-tarefa button:hover {
+    background-color: #4d0d9b;
+}
+
+/* Lista de Tarefas */
+.lista-tarefas {
+    margin-top: 20px;
+}
+
+.tarefa {
+    background-color: #d3cef3;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 2px solid #2575fc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tarefa h3 {
+    margin: 0 0 10px;
+    color: #1a5bbf;
+}
+
+.tarefa p {
+    margin: 5px 0;
+    color: #333333;
+}
+
+.imagem-tarefa {
+    width: 45%;
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.acoes button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-concluir {
+    background-color: #4d0d9b;
+    color: #fff;
+    font-size: 0.8rem;
+    text-decoration: none;    
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-concluir:hover {
+    background-color: #6a11cb;
+}
+
+.btn-editar {
+    background-color: #2575fc;
+    color: white;
+}
+
+.btn-editar:hover {
+    background-color: #1a5bbf;
+}
+
+.btn-excluir {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.btn-excluir:hover {
+    background-color: #cc0000;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header-title, .header-login {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-button {
+        width: 100%;
+        text-align: center;
+    }
+    .current-time {
+       justify-content: center;
+       gap: 4px;
+    }
+    .form-tarefa input,
+    .form-tarefa textarea {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .tarefa {
+        padding: 10px;
+    }
+
+    .acoes button {
+        width: 100%;
+        margin: 5px 0;
+    }
+    .imagem-tarefa {
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    .current-time p {
+        font-size: 0.8rem;       
+    }
+    
+    .form-tarefa {
+        padding: 10px;
+    }
+
+    .form-tarefa button {
+        width: 100%;
+    }
+
+    .tarefa h3 {
+        font-size: 1.2rem;
+    }
+
+    .tarefa p {
+        font-size: 0.9rem;
+    }
+
+    .acoes button {
+        font-size: 0.8rem;
+    }
+    .btn-concluir a {
+        width: 100%;
+    }
+}
