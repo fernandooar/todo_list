@@ -50,3 +50,66 @@ views/                   # Páginas de visualização.
     [cadastro_usuario.php](http://_vscodecontentref_/21)
     [lista_tarefas.php](http://_vscodecontentref_/22)
 ```
+
+# Requisitos
+
+Servidor Web: Apache ou Nginx.
+PHP: Versão 7.4 ou superior.
+Banco de Dados: MySQL.
+Composer: Para gerenciar dependências (opcional).
+Configuração
+Clone o repositório:
+
+# Configure o banco de dados:
+
+Importe o arquivo todo_list.sql no seu banco de dados MySQL.
+Atualize as credenciais de conexão no arquivo includes/conexao.php.
+
+# Configure as permissões:
+
+Certifique-se de que o diretório uploads/ tem permissões de escrita.
+
+# Inicie o servidor:
+
+Se estiver usando o PHP embutido:
+Acesse o sistema:
+
+Abra o navegador e vá para http://localhost:8000.
+
+# Uso
+
+## Cadastro:
+
+Acesse a página de cadastro em /views/cadastro_usuario.php e crie uma conta.
+Login:
+
+Faça login com suas credenciais na página inicial.
+
+# Gerenciamento de Tarefas:
+
+Adicione, edite, conclua ou exclua tarefas na página principal após o login.
+Tecnologias Utilizadas
+Frontend:
+
+HTML5, CSS3, JavaScript.
+Design responsivo com CSS puro.
+Backend:
+
+PHP para lógica do servidor.
+PDO para interação com o banco de dados.
+Banco de Dados:
+
+MySQL para armazenamento de dados.
+Contribuição
+Contribuições são bem-vindas! Siga os passos abaixo para contribuir:
+
+Faça um fork do repositório.
+Crie uma branch para sua feature ou correção:
+Faça commit das suas alterações:
+Envie para o repositório remoto:
+Abra um Pull Request.
+Licença
+Este projeto é licenciado sob a licença MIT. Consulte o arquivo LICENSE para mais detalhes.
+
+Autor
+Fernando de Oliveira Almeida - Desenvolvedor do projeto.
